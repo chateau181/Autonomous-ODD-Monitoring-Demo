@@ -1,7 +1,12 @@
 # Autonomous ODD Monitoring Demo
 
+A C++ prototype for runtime ODD monitoring in autonomous transport systems.
 
-## Overview
+This project demonstrates a modular monitoring architecture that evaluates runtime vehicle data through independent condition checkers and provides ODD assessment results:
+
+- Inside ODD
+- Outside ODD
+- Unclear
 
 This project implements a lightweight C++ prototype for monitoring the Operational Design Domain (ODD) conditions of an autonomous transport system.
 
@@ -224,11 +229,11 @@ ODD Assessment: Outside ODD
 
 ## Future Improvements
 
-This prototype provides a simplified ODD monitoring framework.
+This prototype provides a modular ODD monitoring framework for evaluating runtime conditions in autonomous systems.
 Future extensions could include:
 
 - Ontology-based ODD reasoning
-  - Integrate semantic models for richer environment representation and condition evaluation.
+  - Integrate semantic models to support knowledge-based environment representation and rule reasoning.
 
 - Real-time runtime data streaming
   - Replace predefined scenarios with continuous vehicle and sensor data input.
@@ -237,7 +242,7 @@ Future extensions could include:
   - Improve decision-making for ambiguous or incomplete sensor information.
 
 - ROS2 integration
-  - Connect the monitoring framework with robotic middleware and autonomous system components.
+  - Connect the monitoring framework with autonomous system components through ROS2 communication interfaces.
 
 - Visualization and monitoring interface
   - Provide real-time visualization of ODD status and detected violations.
