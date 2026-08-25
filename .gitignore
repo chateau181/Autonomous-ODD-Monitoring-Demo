@@ -1,0 +1,14 @@
+# CMake build files
+build/
+
+# Compiled binaries
+main
+ODDMonitor
+
+# Object files
+*.o
+
+# CMake cache
+CMakeCache.txt
+cmake_install.cmake
+Makefile
