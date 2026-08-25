@@ -52,5 +52,52 @@ Checker      Checker       Checker
       |
       v
 
++----------------+
+|  ODD Result    |
++----------------+
+
+      |
+      v
+
 ODD Assessment
 (Inside / Outside / Unclear)
+
+## Scenario Demonstration
+
+The prototype was evaluated using multiple runtime scenarios:
+
+### Scenario 1: Normal Operation
+
+Description:
+- Vehicle operates within configured ODD conditions.
+- All monitored conditions satisfy the requirements.
+
+Expected result:
+ODD Assessment: Inside ODD
+
+
+### Scenario 2: Sensor Failure
+
+Description:
+- A sensor failure is introduced into the runtime data.
+- The monitoring system detects insufficient information.
+
+Expected result:
+ODD Assessment: Unclear
+
+Reasons:
+Sensor failure: gps
+
+
+
+### Scenario 3: Dynamic Speed Violation
+
+Description:
+- Historical speed data exceeds the configured limitation.
+- The system identifies an ODD violation.
+
+Expected result:
+ODD Assessment: Outside ODD
+
+Reasons:
+Historical speed exceeded limit
